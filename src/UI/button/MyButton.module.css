@@ -1,0 +1,10 @@
+.MyButton{ 
+    padding: 5px 15px;
+    color: rgb(0, 217, 217);
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid rgb(0, 217, 217);
+    cursor: pointer;
+    border-radius: 0.5em;
+    max-width: fit-content;
+}

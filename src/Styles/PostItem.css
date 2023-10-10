@@ -1,0 +1,83 @@
+.posts_father {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    transition: all 1000ms ease-in;
+
+}
+
+.post_content {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1000ms ease-in;
+
+}
+.post_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post_el {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: solid 2px rgba(255, 0, 0, 0.5);
+    border-radius: 1em;
+    min-width: 250px;
+    flex: 1 1;
+    background-color: rgba(146, 2, 2, 0.75);
+    font-size: large;
+    gap: 0.5em;
+    transition: all 1000ms ease-in;
+
+}
+
+.post{
+    transition: all 1000ms ease-in;
+
+}
+
+.post-enter {
+    transform: translateX(350px);
+    opacity: 0;
+}
+
+.post-enter-active {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    transform: translateX(350px);
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+@media (max-width: 500px) {
+    .post_content {
+        flex-direction: column;
+    }
+    .post_buttons{
+        flex-direction:row;
+    }
+}

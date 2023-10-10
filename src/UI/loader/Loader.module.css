@@ -1,0 +1,32 @@
+.Loader{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px dashed blueviolet;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1) ;
+        border: 2px dashed blueviolet;
+
+    }
+    25%{
+        border: 2px dashed rgb(43, 214, 226);
+
+    }
+    50% {
+        transform: rotate(180deg) scale(2) ;
+        border: 2px dashed rgb(226, 92, 43);
+    }
+    75%{
+        border: 2px dashed rgb(43, 226, 52);
+
+    }
+    100%{
+        transform: rotate(0deg) scale(1) ;
+        border: 2px dashed blueviolet;
+
+
+    }
+}
